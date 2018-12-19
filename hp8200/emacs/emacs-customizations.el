@@ -3,6 +3,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(make-backup-files nil)
  '(package-selected-packages
 	 (quote
 		(magit hideshowvis frame-cmds yasnippet diminish json-mode solarized-theme powerline popup flycheck-pos-tip flycheck-irony flycheck-color-mode-line flycheck company-tern company-irony company irony-eldoc irony psvn dash-functional dash s pkg-info epl rtags multi-web-mode web-mode web-mode-edit-element bm)))
