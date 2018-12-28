@@ -6,7 +6,7 @@
  '(make-backup-files nil)
  '(package-selected-packages
    (quote
-    (composer\.el php-runtime php-mode js2-refactor js2-mode magit hideshowvis frame-cmds yasnippet diminish json-mode solarized-theme powerline popup flycheck-pos-tip flycheck-irony flycheck-color-mode-line flycheck company-tern company-irony company irony-eldoc irony psvn dash-functional dash s pkg-info epl rtags multi-web-mode web-mode web-mode-edit-element bm)))
+    (phpactor phpstan psysh phpunit composer composer\.el php-runtime php-mode js2-refactor js2-mode magit hideshowvis frame-cmds yasnippet diminish json-mode solarized-theme powerline popup flycheck-pos-tip flycheck-irony flycheck-color-mode-line flycheck company-tern company-irony company irony-eldoc irony psvn dash-functional dash s pkg-info epl rtags multi-web-mode web-mode web-mode-edit-element bm)))
  '(show-paren-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

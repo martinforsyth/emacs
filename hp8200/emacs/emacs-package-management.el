@@ -53,11 +53,11 @@
 				  'js2-refactor  ;; Note that xref-js2 jump to definition doesn't work
 				  'php-mode      ;; php-suite - see https://github.com/emacs-php/php-suite
 				  'php-runtime
-				  'composer.el
-				  'phpunit.el
-				  'psysh.el
-				  'phpstan.el
-				  'phpactor.el)
+				  'composer
+				  'phpunit
+				  'psysh
+				  'phpstan
+				  'phpactor)
   "This is a list of all the extra packages that need to be installed")
 
 
