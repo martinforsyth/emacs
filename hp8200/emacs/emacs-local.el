@@ -1,5 +1,6 @@
 (load-file '"~/emacs/emacs-package-management.el")
 
+
 ;; setup files ending in “.php” to open in web-mode
 ;; (add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode))
 
@@ -7,10 +8,10 @@
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.gs\\'" . js2-mode))
 
-;; START js2-refactor and xref-js2 setup
+;; START js2-refactor setup
 ;; ref https://emacs.cafe/emacs/javascript/setup/2017/04/23/emacs-setup-javascript.html
+;; xref-js2 mentioned at that link doesn't seem to work. Well not painlessly at leas
 (require 'js2-refactor)
-(require 'xref-js2)
 
 (add-hook 'js2-mode-hook #'js2-refactor-mode)
 (js2r-add-keybindings-with-prefix "C-c C-r")
@@ -20,9 +21,7 @@
 ;; unbind it.
 (define-key js-mode-map (kbd "M-.") nil)
 
-(add-hook 'js2-mode-hook (lambda ()
-													 (add-hook 'xref-backend-functions #'xref-js2-xref-backend nil t)))
-;; END js2-refactor and xref-js2 setup
+;; END js2-refactor setup
 
 
 
@@ -37,5 +36,4 @@
 	)
 
 (show-paren-mode 1)
-
 (load-file '"~/emacs/emacs-local-keymaps.el")
