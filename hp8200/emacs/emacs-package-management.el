@@ -42,6 +42,7 @@
                                   'flycheck-pos-tip
                                   'popup
                                   'powerline
+																	'smart-mode-line
                                   'solarized-theme
                                   'tern
                                   'json-mode

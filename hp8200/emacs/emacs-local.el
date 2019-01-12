@@ -1,12 +1,46 @@
 (load-file '"~/emacs/emacs-package-management.el")
 
+;; turn on smart-mode-line theme
+(sml/setup)
+
 
 ;; setup files ending in “.php” to open in web-mode
-;; (add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode))
 
-;; setup files ending in “.js” and googlescripts ".gs" to open in js2-mode
+;; setup files ending in “.js” to open in js2-mode
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+
+;; setup googlescripts files, ending in ".gs", to open in js2-mode
 (add-to-list 'auto-mode-alist '("\\.gs\\'" . js2-mode))
+
+;;(add-hook 'php-mode-hook #'js2-refactor-mode)
+
+(defun my-web-mode-hook ()
+   (setq tab-width 2)
+   ;; (c-set-offset 'substatement-open 0)
+   ;; (setq indent-tabs-mode nil)
+   t)
+(add-hook 'web-mode-hook 'my-web-mode-hook)
+
+(defun my-php-mode-hook ()
+   (setq tab-width 2)
+   ;; (c-set-offset 'substatement-open 0)
+   ;; (add-hook 'write-file-functions 'php-delete-trailing-blank-lines)
+   t)
+(add-hook 'php-mode-hook 'my-php-mode-hook)
+
+(defun my-js2-mode-hook ()
+   (setq tab-width 2)
+   ;; (c-set-offset 'substatement-open 0)
+   ;; (add-hook 'write-file-functions 'php-delete-trailing-blank-lines)
+   t)
+(add-hook 'js2-mode-hook 'my-js2-mode-hook)
+
+
+
+
+
+
 
 ;; START js2-refactor setup
 ;; ref https://emacs.cafe/emacs/javascript/setup/2017/04/23/emacs-setup-javascript.html
