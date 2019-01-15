@@ -25,7 +25,7 @@
     (setq bkb-have-rtags nil))
 
 (defvar BKBExtraPackageList (list 'bm
-																	'epl
+                                  'epl
                                   'pkg-info
                                   'let-alist
                                   's
@@ -47,17 +47,17 @@
                                   'json-mode
                                   'diminish
                                   'yasnippet
-																	'magit
-																	'web-mode
-																	'js2-mode      ;; https://emacs.cafe/emacs/javascript/setup/2017/04/23/emacs-setup-javascript.html
-																	'js2-refactor  ;; Note that xref-js2 jump to definition doesn't work
-																	'php-mode      ;; php-suite - see https://github.com/emacs-php/php-suite
-																	'php-runtime
-																	'composer
-																	'phpunit
-																	'psysh
-																	'phpstan
-																	'phpactor)
+                                  'magit
+                                  'web-mode
+                                  'js2-mode      ;; https://emacs.cafe/emacs/javascript/setup/2017/04/23/emacs-setup-javascript.html
+                                  'js2-refactor  ;; Note that xref-js2 jump to definition doesn't work
+                                  'php-mode      ;; php-suite - see https://github.com/emacs-php/php-suite
+                                  'php-runtime
+                                  'composer
+                                  'phpunit
+                                  'psysh
+                                  'phpstan
+                                  'phpactor)
   "This is a list of all the extra packages that need to be installed")
 
 
