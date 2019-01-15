@@ -17,6 +17,7 @@
 
 (defun my-web-mode-hook ()
    (setq tab-width 2)
+   (imenu-add-menubar-index)
    ;; (c-set-offset 'substatement-open 0)
    ;; (setq indent-tabs-mode nil)
    t)
@@ -24,13 +25,14 @@
 
 (defun my-php-mode-hook ()
    (setq tab-width 2)
+   (imenu-add-menubar-index)
    ;; (c-set-offset 'substatement-open 0)
-   ;; (add-hook 'write-file-functions 'php-delete-trailing-blank-lines)
    t)
 (add-hook 'php-mode-hook 'my-php-mode-hook)
 
 (defun my-js2-mode-hook ()
    (setq tab-width 2)
+   (imenu-add-menubar-index)
    ;; (c-set-offset 'substatement-open 0)
    ;; (add-hook 'write-file-functions 'php-delete-trailing-blank-lines)
    t)

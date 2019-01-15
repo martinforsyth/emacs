@@ -57,6 +57,7 @@
                                   'phpunit
                                   'psysh
                                   'phpstan
+                                  'helm
                                   'phpactor)
   "This is a list of all the extra packages that need to be installed")
 

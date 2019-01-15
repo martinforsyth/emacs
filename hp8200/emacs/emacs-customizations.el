@@ -3,17 +3,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
-
- ;; '(custom-enabled-themes (quote (smart-mode-line-light)))
- ;; '(custom-safe-themes
- ;; 	 (quote
- ;; 		("a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
- '(custom-safe-themes
-	 (quote	(default)))
+ '(custom-safe-themes (quote (default)))
  '(make-backup-files nil)
  '(package-selected-packages
 	 (quote
-		(phpactor phpstan psysh phpunit composer composer\.el php-runtime php-mode js2-refactor js2-mode magit hideshowvis frame-cmds yasnippet diminish json-mode solarized-theme powerline popup flycheck-pos-tip flycheck-irony flycheck-color-mode-line flycheck company-tern company-irony company irony-eldoc irony psvn dash-functional dash s pkg-info epl rtags multi-web-mode web-mode web-mode-edit-element bm)))
+		(helm phpactor phpstan psysh phpunit composer composer\.el php-runtime php-mode js2-refactor js2-mode magit hideshowvis frame-cmds yasnippet diminish json-mode solarized-theme powerline popup flycheck-pos-tip flycheck-irony flycheck-color-mode-line flycheck company-tern company-irony company irony-eldoc irony psvn dash-functional dash s pkg-info epl rtags multi-web-mode web-mode web-mode-edit-element bm)))
  '(show-paren-mode t)
  '(split-height-threshold 0))
 (custom-set-faces
