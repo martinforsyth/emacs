@@ -3,6 +3,13 @@
 ;; turn on smart-mode-line theme
 ;; (sml/setup)
 
+;; add third party package/lisp directories
+(setq load-path (cons "~/emacs/third-party-packages" load-path))
+
+;; ;; add third party packages
+;; (require 'hl-tags-mode)
+
+;; (load "~/emacs/third-party-packages/hl-tags-mode.el")
 
 ;; setup files ending in “.php” to open in web-mode
 (add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode))
@@ -18,6 +25,15 @@
 (defun my-web-mode-hook ()
    (setq tab-width 2)
    (imenu-add-menubar-index)
+   (setq web-mode-markup-indent-offset 2)
+
+   ;; see https://github.com/xcwen/ac-php
+   (require 'company-php)
+   (company-mode t)
+   (ac-php-core-eldoc-setup) ;; enable eldoc
+   (make-local-variable 'company-backends)
+   (add-to-list 'company-backends 'company-ac-php-backend)
+             
    ;; (c-set-offset 'substatement-open 0)
    ;; (setq indent-tabs-mode nil)
    t)
@@ -26,6 +42,14 @@
 (defun my-php-mode-hook ()
    (setq tab-width 2)
    (imenu-add-menubar-index)
+   
+   ;; see https://github.com/xcwen/ac-php
+   (require 'company-php)
+   (company-mode t)
+   (ac-php-core-eldoc-setup) ;; enable eldoc
+   (make-local-variable 'company-backends)
+   (add-to-list 'company-backends 'company-ac-php-backend)
+             
    ;; (c-set-offset 'substatement-open 0)
    t)
 (add-hook 'php-mode-hook 'my-php-mode-hook)
@@ -60,8 +84,11 @@
 ;; END js2-refactor setup
 
 
-
+;; some global settings
 (setq-default tab-width 2)
+(setq-default indent-tabs-mode nil)  ;; indent with spaces, never tabs
+(setq c-basic-offset 2)
+(setq-default c-basic-offset 2)
 
 (defun indent-buffer ()
   (interactive)

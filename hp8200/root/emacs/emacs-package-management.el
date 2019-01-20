@@ -57,8 +57,15 @@
                                   'phpunit
                                   'psysh
                                   'phpstan
+                                  'phpactor
+                                  'highlight-parentheses
+                                  'markdown-mode
+                                  'markdown-mode+
+                                  'ac-php
+                                  'company-php
+                                  'php-auto-yasnippets
                                   'helm
-                                  'phpactor)
+																	)
   "This is a list of all the extra packages that need to be installed")
 
 

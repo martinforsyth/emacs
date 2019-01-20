@@ -6,10 +6,11 @@
  '(custom-safe-themes (quote (default)))
  '(make-backup-files nil)
  '(package-selected-packages
-	 (quote
-		(helm phpactor phpstan psysh phpunit composer composer\.el php-runtime php-mode js2-refactor js2-mode magit hideshowvis frame-cmds yasnippet diminish json-mode solarized-theme powerline popup flycheck-pos-tip flycheck-irony flycheck-color-mode-line flycheck company-tern company-irony company irony-eldoc irony psvn dash-functional dash s pkg-info epl rtags multi-web-mode web-mode web-mode-edit-element bm)))
+   (quote
+    (php-auto-yasnippets company-php ac-php highlight-parentheses markdown-mode+ markdown-mode helm phpactor phpstan psysh phpunit composer composer\.el php-runtime php-mode js2-refactor js2-mode magit hideshowvis frame-cmds yasnippet diminish json-mode solarized-theme powerline popup flycheck-pos-tip flycheck-irony flycheck-color-mode-line flycheck company-tern company-irony company irony-eldoc irony psvn dash-functional dash s pkg-info epl rtags multi-web-mode web-mode web-mode-edit-element bm)))
  '(show-paren-mode t)
- '(split-height-threshold 0))
+ '(split-height-threshold 0)
+ '(standard-indent 2))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
