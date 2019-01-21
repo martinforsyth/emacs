@@ -34,6 +34,15 @@
    (make-local-variable 'company-backends)
    (add-to-list 'company-backends 'company-ac-php-backend)
              
+   ;; https://github.com/xcwen/ac-php/blob/master/README.md
+   ;; Etags doesn't find definition of symbol such as WPINC, but
+   ;; ac-php-find-symbol-at-point does.
+   ;;
+   ;; So, when etags doesn't work, provide similar keys for similar
+   ;; functionality from ac-php ...
+   (local-set-key (kbd "C-.") 'ac-php-find-symbol-at-point)  ;like M-. for xref-find-definitions
+   (local-set-key (kbd "C-,") 'ac-php-location-stack-back)   ;like M-, for xref-pop-marker-stack
+
    ;; (c-set-offset 'substatement-open 0)
    ;; (setq indent-tabs-mode nil)
    t)
@@ -42,14 +51,23 @@
 (defun my-php-mode-hook ()
    (setq tab-width 2)
    (imenu-add-menubar-index)
-   
+
    ;; see https://github.com/xcwen/ac-php
    (require 'company-php)
    (company-mode t)
    (ac-php-core-eldoc-setup) ;; enable eldoc
    (make-local-variable 'company-backends)
    (add-to-list 'company-backends 'company-ac-php-backend)
-             
+
+   ;; https://github.com/xcwen/ac-php/blob/master/README.md
+   ;; Etags doesn't find definition of symbol such as WPINC, but
+   ;; ac-php-find-symbol-at-point does.
+   ;;
+   ;; So, when etags doesn't work, provide similar keys for similar
+   ;; functionality from ac-php ...
+   (local-set-key (kbd "C-.") 'ac-php-find-symbol-at-point)  ;like M-. for xref-find-definitions
+   (local-set-key (kbd "C-,") 'ac-php-location-stack-back)   ;like M-, for xref-pop-marker-stack
+
    ;; (c-set-offset 'substatement-open 0)
    t)
 (add-hook 'php-mode-hook 'my-php-mode-hook)

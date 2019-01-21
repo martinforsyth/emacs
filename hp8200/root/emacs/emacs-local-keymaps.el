@@ -54,7 +54,8 @@
 ;;(global-set-key [?\C-c ?C] 'bkb-compile-and-run)
 
 ;; keep exuberant ctags available for finding defs - at least until rtags is working nicely
-(global-set-key [?\C-c ?\M-.] 'find-tag)
-(global-set-key [?\C-c ?\M-\[] 'pop-tag-mark)
+;;(global-set-key [?\C-c ?\M-.] 'find-tag)  ;; find-tag obsolete - use xref-find-definition
+;;(global-set-key [?\C-c ?\M-\[] 'pop-tag-mark)
+
 
 (global-set-key [?\C-c ?T] 'indent-buffer)

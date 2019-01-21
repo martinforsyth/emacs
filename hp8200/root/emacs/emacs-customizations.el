@@ -48,7 +48,7 @@
     ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
  '(package-selected-packages
    (quote
-    (company-php ac-php markdown-mode+ markdown-mode helm highlight-parentheses phpactor phpstan psysh phpunit composer composer\.el php-runtime php-mode js2-refactor js2-mode magit hideshowvis frame-cmds yasnippet diminish json-mode solarized-theme powerline popup flycheck-pos-tip flycheck-irony flycheck-color-mode-line flycheck company-tern company-irony company irony-eldoc irony psvn dash-functional dash s pkg-info epl rtags multi-web-mode web-mode web-mode-edit-element bm)))
+    (php-auto-yasnippets company-php ac-php markdown-mode+ markdown-mode helm highlight-parentheses phpactor phpstan psysh phpunit composer composer\.el php-runtime php-mode js2-refactor js2-mode magit hideshowvis frame-cmds yasnippet diminish json-mode solarized-theme powerline popup flycheck-pos-tip flycheck-irony flycheck-color-mode-line flycheck company-tern company-irony company irony-eldoc irony psvn dash-functional dash s pkg-info epl rtags multi-web-mode web-mode web-mode-edit-element bm)))
  '(pos-tip-background-color "#073642")
  '(pos-tip-foreground-color "#93a1a1")
  '(show-paren-mode t)

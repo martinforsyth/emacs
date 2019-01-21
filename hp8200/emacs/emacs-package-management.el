@@ -25,46 +25,55 @@
     (setq bkb-have-rtags nil))
 
 (defvar BKBExtraPackageList (list 'bm
-                                  'epl
-                                  'pkg-info
-                                  'let-alist
-                                  's
-                                  'dash
-                                  'dash-functional
-                                  'irony
-                                  'irony-eldoc
+                                  ;;completion
                                   'company
-                                  'company-irony
+                                  'company-irony   ;;a minor mode that allows clang based completion for C and C++, on the fly syntax checking and more!
+                                  'company-php
                                   'company-tern
+                                  ;;completion and finding tags
+                                  'ac-php
+                                  ;;php specific helpers
+                                  'phpactor
+                                  'php-auto-yasnippets  ;;Template system. Allows typing an abbreviation and auto-expanding it into function templates.
+                                  'php-runtime
+                                  'phpstan
+                                  'phpunit
+                                  ;;mode line
+                                  'powerline
+                                  ;;flycheck - on-the-fly syntax checking
                                   'flycheck
                                   'flycheck-color-mode-line
-                                  'flycheck-irony
+                                  'flycheck-irony  ;;a minor mode that allows clang based completion for C and C++, on the fly syntax checking and more!
                                   'flycheck-pos-tip
-                                  'popup
-                                  'powerline
-                                  'solarized-theme
-                                  'tern
-                                  'json-mode
-                                  'diminish
-                                  'yasnippet
-                                  'magit
+                                  ;;file modes
+                                  'php-mode        ;;php-suite - see https://github.com/emacs-php/php-suite
                                   'web-mode
-                                  'js2-mode      ;; https://emacs.cafe/emacs/javascript/setup/2017/04/23/emacs-setup-javascript.html
-                                  'js2-refactor  ;; Note that xref-js2 jump to definition doesn't work
-                                  'php-mode      ;; php-suite - see https://github.com/emacs-php/php-suite
-                                  'php-runtime
-                                  'composer
-                                  'phpunit
-                                  'psysh
-                                  'phpstan
-                                  'phpactor
-                                  'highlight-parentheses
+                                  'json-mode
+                                  'js2-mode        ;;https://emacs.cafe/emacs/javascript/setup/2017/04/23/emacs-setup-javascript.html
+                                  'js2-refactor    ;;Note that xref-js2 jump to definition doesn't work
                                   'markdown-mode
                                   'markdown-mode+
-                                  'ac-php
-                                  'company-php
-                                  'php-auto-yasnippets
+                                  ;;version control
+                                  'magit
+                                  ;;package management
+                                  'pkg-info
+                                  ;;other
                                   'helm
+                                  'highlight-parentheses
+                                  'irony           ;;a minor mode that allows clang based completion for C and C++, on the fly syntax checking and more!
+                                  'irony-eldoc     ;;a minor mode that allows clang based completion for C and C++, on the fly syntax checking and more!
+                                  'let-alist
+                                  'popup
+                                  'psysh
+                                  's
+                                  'solarized-theme
+                                  'tern
+                                  'yasnippet       ;;Template system. Allows typing an abbreviation and auto-expanding it into function templates.
+                                  'composer
+                                  'dash
+                                  'dash-functional
+                                  'diminish
+                                  'epl
 																	)
   "This is a list of all the extra packages that need to be installed")
 
