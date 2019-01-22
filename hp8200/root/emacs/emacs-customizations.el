@@ -7,6 +7,9 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["#eee8d5" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#839496"])
+ '(browse-url-browser-function (quote browse-url-chrome))
+ '(browse-url-chrome-arguments (quote ("--no-sandbox")))
+ '(browse-url-generic-program nil)
  '(compilation-message-face (quote default))
  '(cua-global-mark-cursor-color "#2aa198")
  '(cua-normal-cursor-color "#839496")
@@ -48,7 +51,7 @@
     ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
  '(package-selected-packages
    (quote
-    (php-auto-yasnippets company-php ac-php markdown-mode+ markdown-mode helm highlight-parentheses phpactor phpstan psysh phpunit composer composer\.el php-runtime php-mode js2-refactor js2-mode magit hideshowvis frame-cmds yasnippet diminish json-mode solarized-theme powerline popup flycheck-pos-tip flycheck-irony flycheck-color-mode-line flycheck company-tern company-irony company irony-eldoc irony psvn dash-functional dash s pkg-info epl rtags multi-web-mode web-mode web-mode-edit-element bm)))
+    (folding yasnippet-snippets php-auto-yasnippets company-php ac-php markdown-mode+ markdown-mode helm highlight-parentheses phpactor phpstan psysh phpunit composer composer\.el php-runtime php-mode js2-refactor js2-mode magit hideshowvis frame-cmds yasnippet diminish json-mode solarized-theme powerline popup flycheck-pos-tip flycheck-irony flycheck-color-mode-line flycheck company-tern company-irony company irony-eldoc irony psvn dash-functional dash s pkg-info epl rtags multi-web-mode web-mode web-mode-edit-element bm)))
  '(pos-tip-background-color "#073642")
  '(pos-tip-foreground-color "#93a1a1")
  '(show-paren-mode t)

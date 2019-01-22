@@ -15,6 +15,7 @@
 (add-to-list 'package-archives '("gnu"          . "https://elpa.gnu.org/packages/")     t)
 (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (add-to-list 'package-archives '("melpa"        . "http://melpa.org/packages/")         t)
+;; (add-to-list 'package-archives '("melpa-milkbox". "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
 ;; Decide which tags system to attempt to use
@@ -48,6 +49,7 @@
                                   ;;file modes
                                   'php-mode        ;;php-suite - see https://github.com/emacs-php/php-suite
                                   'web-mode
+                                  'multi-web-mode
                                   'json-mode
                                   'js2-mode        ;;https://emacs.cafe/emacs/javascript/setup/2017/04/23/emacs-setup-javascript.html
                                   'js2-refactor    ;;Note that xref-js2 jump to definition doesn't work
@@ -58,6 +60,7 @@
                                   ;;package management
                                   'pkg-info
                                   ;;other
+                                  ;;'folding ;; https://melpa.org/#/folding
                                   'helm
                                   'highlight-parentheses
                                   'irony           ;;a minor mode that allows clang based completion for C and C++, on the fly syntax checking and more!
@@ -68,7 +71,8 @@
                                   's
                                   'solarized-theme
                                   'tern
-                                  'yasnippet       ;;Template system. Allows typing an abbreviation and auto-expanding it into function templates.
+                                  'yasnippet       ;;Template system. Allows typing an abbreviation and auto-expanding it into function templat
+                                  'yasnippet-snippets ;;https://github.com/AndreaCrotti/yasnippet-snippets
                                   'composer
                                   'dash
                                   'dash-functional
